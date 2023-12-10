@@ -1,8 +1,11 @@
 {
   "name": "@fb921/actions5",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
+  "main":"dist/index.js",
+  "module":"dist/index.es.js",
   "dependencies": {
+    "@babel/preset-react": "^7.23.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-lib": "npx rollup -c rollup.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,5 +41,13 @@
   },
   "publishConfig": {
     "@Fb921:registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-svg": "^2.0.0"
   }
 }
