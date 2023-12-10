@@ -1,6 +1,6 @@
 import babel from 'rollup-plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
-import external from 'rollup-plugin-peer-deps-external'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import svg from 'rollup-plugin-svg'
 
@@ -28,7 +28,7 @@ export default [
                 exclude: 'node_modules/**',
                 presets: ['@babel/preset-react']
             }),
-            external(),
+            peerDepsExternal(),
             resolve()
         ]
     }
