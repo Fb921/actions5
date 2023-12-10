@@ -1,6 +1,6 @@
 {
   "name": "@fb921/actions5",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main":"dist/index.js",
   "module":"dist/index.es.js",
@@ -9,9 +9,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,7 +39,14 @@
   "publishConfig": {
     "@Fb921:registry": "https://npm.pkg.github.com"
   },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
