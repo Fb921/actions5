@@ -1,8 +1,8 @@
 {
   "name": "@fb921/actions5",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
-  "main":"dist/index.js",
+  "main":"dist/index.es.js",
   "module":"dist/index.es.js",
   "dependencies": {
     "@babel/preset-react": "^7.23.3",
