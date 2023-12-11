@@ -19,6 +19,7 @@ export default [
             }
         ],
         plugins: [
+            peerDepsExternal(),
             postcss({
                 plugins: [],
                 minimize: true,
@@ -28,7 +29,6 @@ export default [
                 exclude: 'node_modules/**',
                 presets: ['@babel/preset-react']
             }),
-            peerDepsExternal(),
             resolve()
         ]
     }
